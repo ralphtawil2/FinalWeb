@@ -1,0 +1,204 @@
+.toggled{
+    display: none!important;
+}
+
+.klWHUo {
+    background-color: rgba(0, 0, 0, 0.5)!important;
+    color: #ffffff;
+    height: 100%;
+    width: 270px;
+    min-width: 270px;
+    text-align: left;
+    -webkit-transition: width,left,right,0.3s;
+    transition: width,left,right,0.3s;
+    position: relative;
+    z-index: 1009;
+}
+
+
+
+.btn-block {
+    display: inline-block;
+    width: 45%;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.offcanvas{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.navbar-toggler {
+    border: transparent;
+}
+
+.d-block.w-100{
+    width: 100%;
+    height: 100%;
+}
+
+.justify-content-end.flex-grow-1.pe-3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    
+}
+.navbar.navbar-expand-lg.navbar-light.bg-full{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    
+}
+
+.navbar-collapse.collapse{
+    padding-left: 200px;
+}
+
+.nav-link{
+    padding-right: 10px;
+
+}
+
+.navbar{
+    --bs-navbar-nav-link-padding-x: 25px;
+}
+
+
+.bg-light {
+    background-color: rgba(175, 223, 255, 0.178)!important;
+    transition-duration: 300ms;
+    
+}
+
+.bg-full{
+    --bs-bg-opacity: 1;
+    background-color: rgb(192, 229, 253);
+    transition-duration: 500ms;
+    
+    
+}
+.trend{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.MuiCardMedia-root.MuiCardMedia-media.MuiCardMedia-img.css-o69gx8-MuiCardMedia-root{
+    height: 300px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cardstyle{
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 30PX;
+}
+
+.MuiCardContent-root.css-46bh2p-MuiCardContent-root{
+    height: 20px;
+}
+
+.MuiTypography-root.MuiTypography-h5.MuiTypography-gutterBottom.css-h93ljk-MuiTypography-root{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.horline{
+    background-color: black;
+    height: 1.5px;
+    text-align: center;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.aboutus{
+    text-align: center;
+    font-weight: bold;
+}
+
+.parag{
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.bg-dark.text-white.card{
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 80px;
+}
+
+.card-img{
+    height: 100%;
+    opacity: 0.8;
+}
+
+.card-title.h5{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.MuiButtonBase-root.MuiCardActionArea-root.css-b6lsxj-MuiButtonBase-root-MuiCardActionArea-root{
+    padding-bottom: 20px;
+}
+
+
+.bg-dark.text-white.card {
+    margin-bottom: 5%;
+}
+.insta{
+    background-color:rgb(171, 43, 171) !important;
+    border-radius: 10%;
+}
+.whatsapp{
+    background-color: rgb(37, 211, 102)!important;
+    border-radius: 10%;
+}
+
+.facebook {
+    background-color: rgb(59,89,152) !important;
+    border-radius: 10%;
+}
+
+.twitter {
+        background-color: rgb(85, 172, 238)!important;
+        border-radius: 10%;
+}
+
+.myFont{
+    color: black;
+    font-weight: bold;
+    
+}
+
+.bg-beige{
+    background-color: rgba(223, 212, 151, 0.712);
+}
+
+.dark {
+    background: black;
+  }
+.dark {
+    color: white;
+ }
