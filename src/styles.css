@@ -63,6 +63,7 @@
 
 .nav-link{
     padding-right: 10px;
+    color:black !important;
 
 }
 
@@ -79,7 +80,7 @@
 
 .bg-full{
     --bs-bg-opacity: 1;
-    background-color: rgb(192, 229, 253);
+    background-color: rgb(211, 211, 211);
     transition-duration: 500ms;
     
     
@@ -186,19 +187,24 @@
         border-radius: 10%;
 }
 
-.myFont{
-    color: black;
-    font-weight: bold;
-    
-}
+
 
 .bg-beige{
-    background-color: rgba(223, 212, 151, 0.712);
+    background-color: rgb(211, 211, 211);
 }
 
 .dark {
-    background: black;
+    background-color: #292c35;
+    color:white;
+    transition: 500ms;
   }
-.dark {
-    color: white;
- }
+
+
+ .container {
+    margin-inline-start: auto;
+}
+a.navbar-brand {
+    margin-left: 15%;
+}
+
+

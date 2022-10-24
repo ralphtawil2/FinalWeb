@@ -4,7 +4,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {useState} from 'react';
 import DarkMode from './DarkMode';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 function BasicExample() {
   const [navbar,setNavbar]=useState(false);
   const changebackground=() => {

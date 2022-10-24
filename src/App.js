@@ -13,10 +13,10 @@ import ImgOverlayExample2 from './components/autumn';
 import ImgOverlayExample3 from './components/winter';
 import ImgOverlayExample4 from './components/spring';
 import FooterT from './components/footerT';
+//import Footer from './components/Footer';
 
 
 import "./styles.css"
-
 
 
 function App() {

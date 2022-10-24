@@ -14,7 +14,7 @@ export default function Footerr() {
   return (
     <MDBFooter className='bg-beige text-center text-white'>
       <MDBContainer className='p-4 pb-0'>
-        <h1 className='myFont'>Our Socials</h1>
+        <h1 >Our Socials</h1>
         <section className='mb-4'>
           <MDBBtn
             floating
@@ -47,8 +47,9 @@ export default function Footerr() {
           <MDBBtn
             floating 
             className='m-1 whatsapp' 
+            role='button'
             href='#!'
-            role='button'>
+            >
             <MDBIcon fab icon='whatsapp' />
           </MDBBtn>
 
