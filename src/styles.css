@@ -196,30 +196,32 @@ a.navbar-brand {
     flex-wrap: wrap;
     flex-direction: column-reverse;
     width:max-content;
-    padding-top: 1% ;
-    padding-bottom: 1%;
-    padding-inline: 2%;
+    padding-top: 2% ;
+    padding-bottom: 2%;
+    padding-inline: 3%;
     margin-inline: 5%;
-    background: linear-gradient(315deg ,#dedfe0,#1b324b);
+    background: linear-gradient(315deg ,#1b324b,#225877);
     font-weight:500;
-    color: #000203;
+    color: white;
     border: none;
     text-align: center;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .button-three:hover{
-   background:#fff;
-   box-shadow:0px 2px 10px 5px #97B1BF;
-   color:#000;
+   background:linear-gradient(315deg ,#dedfe0,#1b324b);
+   box-shadow:rgba(0, 0, 0, 0.25) 0 8px 15px;
+   transform: translateY(-2px);
+   color:rgb(228, 224, 224);
 }
 
 .button-three:after {
     content: "";
-    background: #f1c40f;
+    background: #1b324b;
     display: block;
     position: absolute;
     padding-top: 300%;

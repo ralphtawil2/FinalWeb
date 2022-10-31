@@ -13,6 +13,7 @@ import ImgOverlayExample2 from './components/autumn';
 import ImgOverlayExample3 from './components/winter';
 import ImgOverlayExample4 from './components/spring';
 import FooterT from './components/footerT';
+import LogIn from './components/login';
 //import Footer from './components/Footer';
 
 
@@ -34,7 +35,7 @@ function App() {
       </Row>
     </Container>
     <hr className='horline' id='anchor-AboutUs'/>
-    <h2 className='aboutus'>About Us</h2>
+    <h2 className='aboutus' >About Us</h2>
     <h3 className='parag'>Royal-Tee is an online clothing shop but with a little twist. You can design and customise your own outfit, and after making your order , we will review your design and make it available for the other customers to buy . Why us ? Because we give back to our community by offering royalties to every designer for each customised design sold.</h3>
     <hr className='horline'/>
     <h4 className='aboutus'>Collections</h4>
@@ -43,6 +44,7 @@ function App() {
     <ImgOverlayExample3/>
     <ImgOverlayExample4/>
     <FooterT/>
+    
   
     </div>
         
