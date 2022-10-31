@@ -8,7 +8,9 @@
       {
         "ignore": [
           "text-size-adjust",
-          "user-select"
+          "user-select",
+          "margin-inline",
+          "max-height: fit-content"
         ]
       }
     ]

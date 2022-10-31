@@ -1,10 +1,6 @@
 import React from 'react';
 import {
-  MDBFooter,
-  MDBContainer,
-
-  MDBIcon,
-  MDBBtn
+  MDBFooter
 } from 'mdb-react-ui-kit';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
@@ -12,49 +8,30 @@ import "mdbreact/dist/css/mdb.css";
 
 export default function Footerr() {
   return (
-    <MDBFooter className='bg-beige text-center text-white'>
-      <MDBContainer className='p-4 pb-0'>
-        <h1 >Our Socials</h1>
-        <section className='mb-4'>
-          <MDBBtn
-            floating
-            className='m-1 facebook'
-            href='#!'
-            role='button'
-          >
-            <MDBIcon fab icon='facebook-f' />
-          </MDBBtn>
-
-          <MDBBtn
-            floating
-            className='m-1 twitter'
-            href='#!'
-            role='button'
-          >
-            <MDBIcon fab icon='twitter' />
-          </MDBBtn>
-
-
-          <MDBBtn
-            floating
-            className='m-1 insta'
-            href='#!'
-            role='button'
-          >
-            <MDBIcon fab icon='instagram' />
-          </MDBBtn>
-
-          <MDBBtn
-            floating 
-            className='m-1 whatsapp' 
-            role='button'
-            href='#!'
-            >
-            <MDBIcon fab icon='whatsapp' />
-          </MDBBtn>
-
-        </section>
-      </MDBContainer>
+    <MDBFooter className='footer-body'>
+      <h1 class='Our-socials-header'>Our socials</h1>
+      <ul class="wrapper">
+  <li class="icon facebook">
+    <span class="tooltip">Facebook</span>
+    <span><i class="fab fa-facebook-f"></i></span>
+  </li>
+  <li class="icon twitter">
+    <span class="tooltip">Twitter</span>
+    <span><i class="fab fa-twitter"></i></span>
+  </li>
+  <li class="icon instagram">
+    <span class="tooltip">Instagram</span>
+    <span><i class="fab fa-instagram"></i></span>
+  </li>
+  <li class="icon github">
+    <span class="tooltip">Github</span>
+    <span><i class="fab fa-github"></i></span>
+  </li>
+  <li class="icon youtube">
+    <span class="tooltip">Youtube</span>
+    <span><i class="fab fa-youtube"></i></span>
+  </li>
+</ul>
     </MDBFooter>
   );
 }

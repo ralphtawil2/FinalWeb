@@ -13,8 +13,8 @@ function CarouselFadeExample() {
         />
         <Carousel.Caption>
           <div className='w-100'>
-          <button className='btn btn-block btn-primary'>Shop</button>
-          <button className='btn btn-block btn-primary'>Customize</button>
+          <button className='button-three'>Shop</button>
+          <button className='button-three'>Customize</button>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -27,8 +27,8 @@ function CarouselFadeExample() {
 
         <Carousel.Caption>
         <div card-footer d-flex justify-content-between>
-          <button className='btn btn-block btn-primary'>Shop</button>
-          <button className='btn btn-block btn-primary'>Customize</button>
+          <button className='button-three'>Shop</button>
+          <button className='button-three'>Customize</button>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -38,11 +38,11 @@ function CarouselFadeExample() {
           src="Images/mountain.jpg"
           alt="Third slide"
         />
-
+        
         <Carousel.Caption>
         <div card-footer d-flex justify-content-between>
-          <button className='btn btn-block btn-primary'>Shop</button>
-          <button className='btn btn-block btn-primary'>Customize</button>
+          <button className='button-three'>Shop</button>
+          <button className='button-three'>Customize</button>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
