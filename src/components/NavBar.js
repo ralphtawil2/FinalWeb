@@ -1,12 +1,13 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import {useState} from 'react';
 import DarkMode from './DarkMode';
+import PopUpRegisterButton from './BackdropModal';
+
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function BasicExample() {
+function NavigationBar() {
   const [navbar,setNavbar]=useState(false);
   const changebackground=() => {
     if (window.scrollY >= 56){
@@ -26,23 +27,12 @@ function BasicExample() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" >
             
-            <Nav.Link href="#anchor-AboutUs">About Us</Nav.Link>
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Hoodies</Nav.Link>
-            <Nav.Link href="#link">Pants</Nav.Link>
-            <Nav.Link href="#link">T-shirts</Nav.Link>
-            
-            <NavDropdown title="Collection" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Summer</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Winter
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Autumn</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="/#anchor-AboutUs">About Us</Nav.Link>
+            <Nav.Link href='/'>Home</Nav.Link>
+            <Nav.Link href='/shop'>Shop</Nav.Link>
+            <Nav.Link href='/contact'>Contact</Nav.Link>
+            <PopUpRegisterButton/>
+            <Nav.Link href='cart'>Cart</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -50,4 +40,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default NavigationBar;

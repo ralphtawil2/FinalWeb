@@ -43,7 +43,7 @@
 }
 
 .navbar.navbar-expand-lg.navbar-light.bg-light{
-    position: fixed;
+    position: -webkit-sticky;
     top: 0;
     z-index: 999;
     width: 100%;
@@ -349,6 +349,21 @@ a.navbar-brand {
     margin-bottom: 5%;
   }
 
+  .css-heg063-MuiTabs-flexContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    /* align-content: center; */
+    justify-content: center;
+    justify-items: c;
+}
+
+.container.p-3.my-5.d-flex.flex-column.w-50 {
+    border-style: ridge;
+    
+}
  
 
 

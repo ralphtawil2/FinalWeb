@@ -11,7 +11,8 @@
           "user-select",
           "margin-inline",
           "max-height: fit-content",
-          "padding-inline"
+          "padding-inline",
+          "position: -webkit-sticky"
         ]
       }
     ]

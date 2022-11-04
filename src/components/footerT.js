@@ -8,6 +8,7 @@ import "mdbreact/dist/css/mdb.css";
 
 export default function Footerr() {
   return (
+    
     <MDBFooter className='footer-body'>
       <h1 class='Our-socials-header'>Our socials</h1>
       <ul class="wrapper">
