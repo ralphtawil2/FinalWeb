@@ -10,7 +10,9 @@
           "text-size-adjust",
           "user-select",
           "margin-inline",
-          "max-height: fit-content"
+          "max-height: fit-content",
+          "padding-inline",
+          "position: -webkit-sticky"
         ]
       }
     ]
