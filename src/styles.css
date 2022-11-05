@@ -34,7 +34,7 @@
 
 .d-block.w-100{
     width: 100%;
-    height: 100%;
+    height: 93vh;
 }
 
 .justify-content-end.flex-grow-1.pe-3{
@@ -47,6 +47,7 @@
     top: 0;
     z-index: 999;
     width: 100%;
+
     
 }
 .navbar.navbar-expand-lg.navbar-light.bg-full{
@@ -68,6 +69,7 @@
 }
 
 .navbar{
+    height:7vh;
     --bs-navbar-nav-link-padding-x: 25px;
 }
 
