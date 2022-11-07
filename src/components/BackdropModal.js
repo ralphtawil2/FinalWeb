@@ -28,12 +28,7 @@ function PopUpRegisterButton() {
         <Modal.Body>
           <RegistrationForm />
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary">Understood</Button>
-        </Modal.Footer>
+        
       </Modal>
     </>
   );

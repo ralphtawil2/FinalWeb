@@ -34,7 +34,7 @@
 
 .d-block.w-100{
     width: 100%;
-    height: 100%;
+    height: 93vh;
 }
 
 .justify-content-end.flex-grow-1.pe-3{
@@ -200,7 +200,7 @@ a.navbar-brand {
     padding-bottom: 2%;
     padding-inline: 3%;
     margin-inline: 5%;
-    background: linear-gradient(315deg ,#1b324b,#225877);
+    background: rgba(0, 0, 0, 0.7);
     font-weight:500;
     color: white;
     border: none;
@@ -362,9 +362,26 @@ a.navbar-brand {
 
 .container.p-3.my-5.d-flex.flex-column.w-50 {
     border-style: ridge;
+    width: 100% !important;
     
 }
+
+.nav-link.active{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
  
+.ripple.ripple-surface.btn.btn-primary.mb-4.w-100{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 0.25rem;
+}
+
+.modal-content{
+    border-radius: 0.8rem !important;
+}
+
+.container.p-3.my-5.d-flex.flex-column.w-50{
+    border-radius: 0.6rem;
+}
 
 
 
