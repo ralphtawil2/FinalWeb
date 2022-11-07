@@ -9,7 +9,8 @@ import ImgOverlayExample from '../components/summer';
 import ImgOverlayExample2 from '../components/autumn';
 import ImgOverlayExample3 from '../components/winter';
 import ImgOverlayExample4 from '../components/spring';
-function Home(){
+
+function Home() {
     return(
     <>
       <CarouselFadeExample/>

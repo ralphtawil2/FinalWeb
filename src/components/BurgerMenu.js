@@ -35,13 +35,9 @@ function OffcanvasExample() {
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
                     <NavDropdown.Item href="#action3">Summer</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Winter
-                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">Winter</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Dragon
-                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action5">Dragon</NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
                 <Form className="d-flex">

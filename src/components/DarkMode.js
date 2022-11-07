@@ -35,9 +35,8 @@ const DarkMode = () => {
 
   return (
     <div>
-      <i onClick={() => setDarkMode(!darkMode)}class="fas fa-moon"></i>
+      <i onClick={() => setDarkMode(!darkMode)} class="fas fa-moon"></i>
     </div>
-    
   );
 };
 

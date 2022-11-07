@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import Nav from 'react-bootstrap/Nav';
-import RegistrationForm from './Registration';
+import React, { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import Nav from "react-bootstrap/Nav";
+import RegistrationForm from "./Registration";
 
 function PopUpRegisterButton() {
   const [show, setShow] = useState(false);
@@ -12,8 +12,6 @@ function PopUpRegisterButton() {
 
   return (
     <>
-
-
       <Nav.Link onClick={handleShow}>Register</Nav.Link>
 
       <Modal
