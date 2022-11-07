@@ -250,26 +250,12 @@ html {
     height: 100%;
 }
 
-.css-19kzrtu {
-    padding: 3rem;
-    grid-column: 2 / 3;
-}
-
-body {
-    margin: 0;
-    min-height: 100%;
-    display: grid;
-    grid: auto / 1em 1fr 1em;
-}
-
-
-
 .footer-body {
     display: grid;
     font-family: "Poppins", sans-serif;
     place-items: center;
     background: linear-gradient(315deg, #dedfe0, #132436);
-    margin-top: auto;
+    margin-top: 100%;
 }
 
 .wrapper {
