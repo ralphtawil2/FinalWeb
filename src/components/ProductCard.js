@@ -18,7 +18,7 @@ function ProductCard() {
 
       <MDBRow>
         <MDBCol md="12" lg="4" className="mb-4">
-        <MDBCard>
+          <MDBCard>
             <MDBRipple
               rippleColor="light"
               rippleTag="div"
@@ -62,7 +62,7 @@ function ProductCard() {
           </MDBCard>
         </MDBCol>
         <MDBCol md="6" lg="4" className="mb-4">
-        <MDBCard>
+          <MDBCard>
             <MDBRipple
               rippleColor="light"
               rippleTag="div"
@@ -106,7 +106,7 @@ function ProductCard() {
           </MDBCard>
         </MDBCol>
         <MDBCol md="6" lg="4" className="mb-4">
-        <MDBCard>
+          <MDBCard>
             <MDBRipple
               rippleColor="light"
               rippleTag="div"
@@ -150,7 +150,7 @@ function ProductCard() {
           </MDBCard>
         </MDBCol>
         <MDBCol md="12" lg="4" className="mb-4">
-        <MDBCard>
+          <MDBCard>
             <MDBRipple
               rippleColor="light"
               rippleTag="div"
@@ -194,7 +194,7 @@ function ProductCard() {
           </MDBCard>
         </MDBCol>
         <MDBCol md="6" lg="4" className="mb-4">
-        <MDBCard>
+          <MDBCard>
             <MDBRipple
               rippleColor="light"
               rippleTag="div"
