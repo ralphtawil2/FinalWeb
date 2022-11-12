@@ -1,0 +1,9 @@
+TO RUN THE FRONTEND :
+1) open a terminal ( CTRL+` )
+2) make sure u are in the frontend folder ( cd frontend )
+3) start the frontend ( npm start )
+
+TO RUN THE BACKEND : 
+1) open a new terminal ( CTRL+` )
+2) make sure u are in the backend folder ( cd backend )
+3) start the backend ( nodemon server )
