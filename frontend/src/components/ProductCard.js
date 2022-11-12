@@ -31,7 +31,7 @@ function ProductCard() {
               />
               <a href="#!">
                 <div className="mask">
-                  <div class="d-flex justify-content-start align-items-end h-100">
+                  <div className="d-flex justify-content-start align-items-end h-100">
                     <h5>
                       <span className="badge bg-primary ms-2">New</span>
                       <span className="badge bg-success ms-2">Eco</span>
@@ -75,7 +75,7 @@ function ProductCard() {
               />
               <a href="#!">
                 <div className="mask">
-                  <div class="d-flex justify-content-start align-items-end h-100">
+                  <div className="d-flex justify-content-start align-items-end h-100">
                     <h5>
                       <span className="badge bg-primary ms-2">New</span>
                       <span className="badge bg-success ms-2">Eco</span>
@@ -119,7 +119,7 @@ function ProductCard() {
               />
               <a href="#!">
                 <div className="mask">
-                  <div class="d-flex justify-content-start align-items-end h-100">
+                  <div className="d-flex justify-content-start align-items-end h-100">
                     <h5>
                       <span className="badge bg-primary ms-2">New</span>
                       <span className="badge bg-success ms-2">Eco</span>
@@ -163,7 +163,7 @@ function ProductCard() {
               />
               <a href="#!">
                 <div className="mask">
-                  <div class="d-flex justify-content-start align-items-end h-100">
+                  <div className="d-flex justify-content-start align-items-end h-100">
                     <h5>
                       <span className="badge bg-primary ms-2">New</span>
                       <span className="badge bg-success ms-2">Eco</span>
@@ -207,7 +207,7 @@ function ProductCard() {
               />
               <a href="#!">
                 <div className="mask">
-                  <div class="d-flex justify-content-start align-items-end h-100">
+                  <div className="d-flex justify-content-start align-items-end h-100">
                     <h5>
                       <span className="badge bg-primary ms-2">New</span>
                       <span className="badge bg-success ms-2">Eco</span>
@@ -251,7 +251,7 @@ function ProductCard() {
               />
               <a href="#!">
                 <div className="mask">
-                  <div class="d-flex justify-content-start align-items-end h-100">
+                  <div className="d-flex justify-content-start align-items-end h-100">
                     <h5>
                       <span className="badge bg-primary ms-2">New</span>
                       <span className="badge bg-success ms-2">Eco</span>

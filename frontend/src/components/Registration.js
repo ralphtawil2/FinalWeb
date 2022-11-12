@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Axios from "axios";
 import {
   MDBContainer,
   MDBTabs,
@@ -21,6 +22,21 @@ function RegistrationForm() {
     }
 
     setJustifyActive(value);
+  };
+  const [name, setName] = useState("");
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    Axios.post("http://localhost:3001", {
+      name: name,
+      username: username,
+      email: email,
+      password: password,
+    });
+    console.log(name, username, email, password);
   };
 
   return (
@@ -174,19 +190,37 @@ function RegistrationForm() {
             <p className="text-center mt-3">or:</p>
           </div>
 
-          <MDBInput wrapperClass="mb-4" label="Name" id="form1" type="text" />
+          <MDBInput
+            wrapperClass="mb-4"
+            label="Name"
+            id="form1"
+            type="text"
+            onChange={(e) => setName(e.target.value)}
+            value={name}
+          />
           <MDBInput
             wrapperClass="mb-4"
             label="Username"
             id="form1"
             type="text"
+            onChange={(e) => setUsername(e.target.value)}
+            value={username}
           />
-          <MDBInput wrapperClass="mb-4" label="Email" id="form1" type="email" />
+          <MDBInput
+            wrapperClass="mb-4"
+            label="Email"
+            id="form1"
+            type="email"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+          />
           <MDBInput
             wrapperClass="mb-4"
             label="Password"
             id="form1"
             type="password"
+            onChange={(e) => setPassword(e.target.value)}
+            value={password}
           />
 
           <div className="d-flex justify-content-center mb-4">
@@ -197,7 +231,9 @@ function RegistrationForm() {
             />
           </div>
 
-          <MDBBtn className="mb-4 w-100">Sign up</MDBBtn>
+          <MDBBtn className="mb-4 w-100" onClick={handleSubmit}>
+            Sign up
+          </MDBBtn>
         </MDBTabsPane>
       </MDBTabsContent>
     </MDBContainer>

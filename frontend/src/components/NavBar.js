@@ -30,7 +30,7 @@ function NavigationBar() {
             <Nav.Link href="/shop">Shop</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
             <PopUpRegisterButton />
-            <Nav.Link href="cart">Cart</Nav.Link>
+            <Nav.Link href="/cart">Cart</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

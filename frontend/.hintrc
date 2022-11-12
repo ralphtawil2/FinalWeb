@@ -12,7 +12,8 @@
           "margin-inline",
           "max-height: fit-content",
           "padding-inline",
-          "position: -webkit-sticky"
+          "position: -webkit-sticky",
+          "scroll-margin-top"
         ]
       }
     ]

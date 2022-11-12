@@ -24,7 +24,7 @@ function CarouselFadeExample() {
         />
 
         <Carousel.Caption>
-          <div card-footer d-flex justify-content-between>
+          <div className="w-100">
             <button className="button-three">Shop</button>
             <button className="button-three">Customize</button>
           </div>
@@ -38,7 +38,7 @@ function CarouselFadeExample() {
         />
 
         <Carousel.Caption>
-          <div card-footer d-flex justify-content-between>
+          <div className="w-100">
             <button className="button-three">Shop</button>
             <button className="button-three">Customize</button>
           </div>
