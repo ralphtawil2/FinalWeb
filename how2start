@@ -6,4 +6,7 @@ TO RUN THE FRONTEND :
 TO RUN THE BACKEND : 
 1) open a new terminal ( CTRL+` )
 2) make sure u are in the backend folder ( cd backend )
-3) start the backend ( nodemon server )
+3) start the backend ( nodemon server ) 
+
+PS: use nodemon to run the server instead of node because nodemon will automatically
+refresh the server when any change is applied to the code.

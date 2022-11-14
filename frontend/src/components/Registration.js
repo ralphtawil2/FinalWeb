@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import Axios from "axios";
+/*
+Axios is a library it easier to send async HTTP requests and 
+helps us perform CRUD operations (Create , Read, Update, Delete)
+*/
 import {
   MDBContainer,
   MDBTabs,
@@ -38,6 +42,8 @@ function RegistrationForm() {
     });
     console.log(name, username, email, password);
   };
+
+
 
   return (
     <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
