@@ -46,7 +46,7 @@ function RegistrationForm() {
 
 
   return (
-    <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
+    <MDBContainer className="p-3 my-5 d-flex flex-column w-100">
       <MDBTabs
         pills
         justify
