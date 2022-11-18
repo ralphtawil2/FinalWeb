@@ -1,10 +1,10 @@
-import BasicTabs from "./CenteredTabs";
+import CenteredTabs from "./CenteredTabs";
 
 function Shop() {
   return (
     <>
       <div className="shop-div">
-        <BasicTabs />
+        <CenteredTabs />
       </div>
     </>
   );

@@ -21,7 +21,7 @@ function NavigationBar() {
     <Navbar expand="lg" className={navbar ? "bg-full" : "bg-light"}>
       <Container>
         <DarkMode></DarkMode>
-        <Navbar.Brand href="#home">RoyalTees</Navbar.Brand>
+        <Navbar.Brand href="/">RoyalTees</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

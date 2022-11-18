@@ -4,6 +4,7 @@ import Axios from "axios";
 Axios is a library it easier to send async HTTP requests and 
 helps us perform CRUD operations (Create , Read, Update, Delete)
 */
+
 import {
   MDBContainer,
   MDBTabs,
@@ -220,15 +221,16 @@ function RegistrationForm() {
             onChange={(e) => setEmail(e.target.value)}
             value={email}
           />
+          
           <MDBInput
             wrapperClass="mb-4"
-            label="Password"
             id="form1"
             type="password"
             onChange={(e) => setPassword(e.target.value)}
             value={password}
+            label="Password"
           />
-
+        
           <div className="d-flex justify-content-center mb-4">
             <MDBCheckbox
               name="flexCheck"

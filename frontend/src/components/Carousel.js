@@ -11,8 +11,12 @@ function CarouselFadeExample() {
         />
         <Carousel.Caption>
           <div className="w-100">
-            <button className="button-three">Shop</button>
-            <button className="button-three">Customize</button>
+            <a href="/shop">
+              <button className="button-three">Shop</button>
+            </a>
+            <a href="/customize">
+              <button className="button-three">Customize</button>
+            </a>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -25,8 +29,12 @@ function CarouselFadeExample() {
 
         <Carousel.Caption>
           <div className="w-100">
-            <button className="button-three">Shop</button>
-            <button className="button-three">Customize</button>
+            <a href="/shop">
+              <button className="button-three">Shop</button>
+            </a>
+            <a href="/customize">
+              <button className="button-three">Customize</button>
+            </a>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -39,8 +47,12 @@ function CarouselFadeExample() {
 
         <Carousel.Caption>
           <div className="w-100">
-            <button className="button-three">Shop</button>
-            <button className="button-three">Customize</button>
+            <a href="/shop">
+              <button className="button-three">Shop</button>
+            </a>
+            <a href="/customize">
+              <button className="button-three">Customize</button>
+            </a>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
