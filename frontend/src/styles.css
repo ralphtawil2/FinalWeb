@@ -1,3 +1,15 @@
+html{
+    height:100%;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    padding-bottom: 12.4rem;
+    box-sizing: inherit;
+}
 .toggled{
     display: none!important;
 }
@@ -243,10 +255,13 @@ a.navbar-brand {
     opacity: 1;
     transition: 0s
 }
+
 .footer-body {
+    position: absolute;
     display: grid;
-    height: 100%;
-    width: 100vw;
+    right: 0;
+    left:0;
+    bottom:0;
     font-family: "Poppins", sans-serif;
     justify-content: center;
     background: linear-gradient(315deg, #dedfe0, #132436);
@@ -444,4 +459,13 @@ a.navbar-brand {
 .css-16r9pk3 {
     max-width: 90% !important;
     margin: 8%;
+}
+
+section.h-100.h-custom{
+    background-color: inherit !important;
+}
+
+.card .card-body h1, .card .card-body h2, .card .card-body h3, .card .card-body h4, .card .card-body h5, .card .card-body h6 {
+    font-weight: 400;
+    color: black;
 }

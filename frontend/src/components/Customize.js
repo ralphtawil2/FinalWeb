@@ -11,7 +11,7 @@ import FileUploader from './FileUploder';
 
 const steps = [
   {
-    label: 'Download the template',
+    label: <h6>Download the template</h6>,
     description: <p>First things first , you need to download our default template . You can do so by <a href='Images/hoodietemplate.jpg' download='MyHoodie.jpg'>clicking here.</a></p>,
     
   },
