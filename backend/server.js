@@ -34,7 +34,7 @@ const port = process.env.PORT || 3001;
 this line will set the port variable to 3001
 */
 
-const UserModel = require("./UserData");
+const UserModel = require("./models/UserData");
 /*
 this line will import the UserSchema created in UserData.js
 and use it under the name of UserModel
@@ -42,6 +42,7 @@ and use it under the name of UserModel
 
 app.use(cors());
 app.use(express.json());
+
 
 const uri = process.env.ATLAS_URI;
 /*
