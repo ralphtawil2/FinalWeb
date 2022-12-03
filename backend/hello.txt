@@ -4,3 +4,24 @@ hello
 "test": "echo \"Error: no test specified\" && exit 1"
 
 Postman invite link: https://app.getpostman.com/join-team?invite_code=f8b86cac46610b4f8ec95ce0f3c8d5e4
+
+
+// app.post("/", async (req, res) => {
+//   const name = req.body.name;
+//   const username = req.body.username;
+//   const email = req.body.email;
+//   const password = req.body.password;
+//   const user = new UserModel({
+//     name: name,
+//     username: username,
+//     email: email,
+//     password: password,
+//   });
+
+//   try {
+//     await user.save();
+//     res.send("inserted data");
+//   } catch (err) {
+//     console.log(err);
+//   }
+// });

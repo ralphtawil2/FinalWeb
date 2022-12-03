@@ -53,6 +53,7 @@ uri will be equal to the connection string passed in .env file
 
 // Setting up routes:
 app.use('/user', require('./routes/userRouter'))
+app.use('/api', require('./routes/categoryRouter'))
 
 
 // Connect to MongoDB:
@@ -67,28 +68,6 @@ const connection = mongoose.connection;
 /*
 setting up the connection to the database 
 */
-
-
-// app.post("/", async (req, res) => {
-//   const name = req.body.name;
-//   const username = req.body.username;
-//   const email = req.body.email;
-//   const password = req.body.password;
-//   const user = new UserModel({
-//     name: name,
-//     username: username,
-//     email: email,
-//     password: password,
-//   });
-
-//   try {
-//     await user.save();
-//     res.send("inserted data");
-//   } catch (err) {
-//     console.log(err);
-//   }
-// });
-
 
 app.get('/', (req, res) =>{
   res.json({msg: "Welcome ! Wooooooooooooooooooo"})

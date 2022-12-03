@@ -9,6 +9,7 @@ const UserSchema = new mongoose.Schema({
   username: { 
     type: String,
     required: true,
+    unique: true
   },
   email: { 
     type: String,
@@ -31,5 +32,5 @@ const UserSchema = new mongoose.Schema({
   timestamps: true
 });
 
-const User = mongoose.model('user_datas', UserSchema);
+const User = mongoose.model('client', UserSchema);
 module.exports= User
