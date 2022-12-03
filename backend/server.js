@@ -54,6 +54,7 @@ uri will be equal to the connection string passed in .env file
 // Setting up routes:
 app.use('/user', require('./routes/userRouter'))
 app.use('/api', require('./routes/categoryRouter'))
+app.use('/api', require('./routes/upload'))
 
 
 // Connect to MongoDB:
