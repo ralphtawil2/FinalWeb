@@ -5,10 +5,10 @@ import Col from "react-bootstrap/Col";
 import MultiActionAreaCard from "../components/cards1.js";
 import MultiActionAreaCard2 from "../components/cards2.js";
 import MultiActionAreaCard3 from "../components/cards3.js";
-import ImgOverlayExample from "../components/summer";
+/*import ImgOverlayExample from "../components/summer";
 import ImgOverlayExample2 from "../components/autumn";
 import ImgOverlayExample3 from "../components/winter";
-import ImgOverlayExample4 from "../components/spring";
+import ImgOverlayExample4 from "../components/spring";*/
 function Home() {
   return (
     <>
@@ -37,11 +37,7 @@ function Home() {
         royalties to every designer for each customised design sold.
       </h3>
       <hr className="horline" />
-      <h4 className="aboutus">Collections</h4>
-      <ImgOverlayExample />
-      <ImgOverlayExample2 />
-      <ImgOverlayExample3 />
-      <ImgOverlayExample4 />
+      
     </>
   );
 }

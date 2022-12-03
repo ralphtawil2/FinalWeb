@@ -34,6 +34,7 @@ this line will allow us to use all the useful predefined functions
  */
 
 const UserModel = require("./models/userModel");
+
 /*
 this line will import the UserSchema created in UserData.js
 and use it under the name of UserModel
@@ -45,6 +46,7 @@ app.use(cors());
 app.use(fileUpload({
   useTempFiles: true
 }));
+
 
 const uri = process.env.ATLAS_URI;
 /*

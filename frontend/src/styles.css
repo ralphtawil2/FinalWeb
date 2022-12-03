@@ -42,6 +42,7 @@ body{
 
 .navbar-toggler {
     border: transparent;
+    
 }
 
 .d-block.w-100{
@@ -58,7 +59,8 @@ body{
 }
 
 .navbar.navbar-expand-lg.navbar-light.bg-light{
-    position: -webkit-sticky;
+    position:inherit;
+    color :rgb(5, 5, 5);
     top: 0;
     z-index: 999;
     width: 100%;
@@ -74,30 +76,38 @@ body{
 }
 
 .navbar-collapse.collapse{
-    padding-left: 200px;
+    left:0;
 }
 
 .nav-link{
     padding-right: 10px;
-    color:black !important;
+    color:rgb(255, 255, 255) !important;
+    font-size: larger;
+    font-family: ui-serif;
+    
 
 }
 
 .navbar{
-    height:7vh;
+    
     --bs-navbar-nav-link-padding-x: 25px;
 }
 
 
 .bg-light {
-    background-color: rgba(175, 223, 255, 0.178)!important;
+    background: black !important;
     transition-duration: 300ms;
     
 }
 
 .bg-full{
     --bs-bg-opacity: 1;
-    background: linear-gradient(315deg ,#dedfe0,#1b324b);
+    background: #000000;  /* fallback for old browsers */
+
+    
+    
+    
+    
     transition-duration: 500ms;
     
     
@@ -107,7 +117,7 @@ body{
     padding-top: 50px;
     padding-bottom: 30px;
     font-size: 30px;
-    font-style: italic;
+    font-family: ui-serif;
 }
 
 .MuiCardMedia-root.MuiCardMedia-media.MuiCardMedia-img.css-o69gx8-MuiCardMedia-root{
@@ -149,9 +159,11 @@ body{
 .aboutus{
     text-align: center;
     font-weight: bold;
+    font-family: ui-serif;
 }
 
 .parag{
+    font-family: ui-serif;
     text-align: center;
     padding-left: 25%;
     padding-right: 25%;
@@ -192,14 +204,18 @@ body{
 
 .dark {
     background-color: #292c35;
-    color:white;
+    color:rgb(255, 255, 255);
     transition: 500ms;
   }
 
 
- .container {
-    margin-inline-start: auto;
+.container {
+    margin-inline-start: 0;
+    margin-left:0;
+    margin-right:0;
+    max-width: 100% !important;
 }
+
 a.navbar-brand {
     margin-left: 15%;
 }
@@ -217,7 +233,7 @@ a.navbar-brand {
     padding-bottom: 2%;
     padding-inline: 3%;
     margin-inline: 5%;
-    background: linear-gradient(315deg ,#174e5c,#000000);
+    background-color: black !important;
     font-weight:500;
     color: white;
     border: none;
@@ -227,6 +243,9 @@ a.navbar-brand {
     text-decoration: none;
     overflow: hidden;
     border-radius: 10px;
+    font-family: ui-serif;
+    min-width: 15%;
+    font-size:larger;
 }
 
 .button-three:hover{
@@ -264,7 +283,7 @@ a.navbar-brand {
     bottom:0;
     font-family: "Poppins", sans-serif;
     justify-content: center;
-    background: linear-gradient(315deg, #dedfe0, #132436);
+    background: black
 }
 .wrapper {
     width: 100%;
@@ -370,6 +389,8 @@ a.navbar-brand {
   
   .Our-socials-header{
     margin-bottom: 5%;
+    color:white;
+    font-family: ui-serif;
   }
 
   .css-heg063-MuiTabs-flexContainer {
@@ -393,14 +414,13 @@ a.navbar-brand {
     border-radius: 2.5% !important;
 }
 
-.nav-link.active{
-    background-color: rgb(238, 230, 230) !important;
-}
+
 
 .ripple.ripple-surface.btn.btn-primary.mb-4.w-100{
     background-color: rgb(255, 255, 255) !important;
     color: black !important;;
     border-radius: 0.5rem;
+    max-height: 45px;
 }
 
 .modal-content {
@@ -469,3 +489,61 @@ section.h-100.h-custom{
     font-weight: 400;
     color: black;
 }
+
+a.nav-link.active{
+    background-color: black !important;
+    
+}
+
+i.fab{
+    color: white !important;
+}
+
+a{
+    color :white !important;
+}
+
+a.navbar-brand{
+    color: rgb(255, 255, 255) !important;
+    font-size:xx-large;
+    font-family: ui-serif;
+    margin-left:10%;
+    margin-right: 0;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    max-width: inherit !important;
+    justify-content: end;
+    margin-right: 5%;
+
+}
+
+
+.MoonIconBG{
+    background-color: #383838;
+    height:5%;
+    width: 2%;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.me-auto{
+    margin-right:0!important;
+}
+
+.navbar.navbar-light .navbar-toggler-icon {
+    cursor: pointer;
+    background-image: url("https://th.bing.com/th/id/R.99c4413d03608e9202612095d8144adb?rik=GHMt%2bwxYBlpTLA&riu=http%3a%2f%2f21thirteen.com%2fwp-content%2fuploads%2f2016%2f03%2fhamburger-menu.jpg&ehk=mHI5o%2fJMLmNuPlPD8j%2fpgFn5MOlzhK3lF4nBK%2f6BvJc%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1") !important;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+   
+}
+
