@@ -35,6 +35,18 @@ function RegistrationForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // if (name == null) {
+    //   console.log("Please enter your name");
+    // }
+    // if (username == null) {
+    //   console.log("Please enter your username");
+    // }
+    // if (email == null) {
+    //   console.log("Please enter your email");
+    // }
+    // if (password == null) {
+    //   console.log("Please enter your password");
+    // }
     Axios.post("http://localhost:3001", {
       name: name,
       username: username,
