@@ -21,6 +21,7 @@ const OrderSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
+<<<<<<< HEAD
     address: {
       type: Object,
       equired: true,
@@ -29,10 +30,16 @@ const OrderSchema = new mongoose.Schema(
       type: String,
       default: "pending",
     },
+=======
+>>>>>>> d7bad6e (Made minor changes.)
   },
   {
     timestamps: true,
   }
 );
 
+<<<<<<< HEAD
 module.exports = mongoose.model("orders", OrderSchema);
+=======
+module.exports =mongoose.model("orders", OrderSchema)
+>>>>>>> d7bad6e (Made minor changes.)
