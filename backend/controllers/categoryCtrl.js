@@ -10,12 +10,13 @@ const categoryCtrl = {
             return res.status(500).json({msg: err.message})
         }
     },
+
     createCategory: async (req, res) =>{
         try {
             // if user has role = 1, he is an admin
             // Only admins can create, delete and edit categories
             const {name} = req.body;
-            const category = await Category.findOne({name})
+            const category = await Category.findOne({name: name.toLowerCase()})
             if(category) return res.status(400).json({msg: "This category already exists."})
 
             const newCategory = new Category({name})
