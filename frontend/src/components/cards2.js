@@ -12,7 +12,7 @@ export default function MultiActionAreaCard2() {
         <CardMedia
           component="img"
           height="140"
-          image="Images/menhoodie.jpg"
+          image="Images/blueMenHoodieImage.jpg"
           alt="green iguana"
         />
         <CardContent>
