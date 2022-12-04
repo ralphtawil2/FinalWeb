@@ -34,7 +34,7 @@ const DarkMode = () => {
   }, [darkMode]);
 
   return (
-    <div>
+    <div className={"MoonIconBG"}>
       <i onClick={() => setDarkMode(!darkMode)} className="fas fa-moon"></i>
     </div>
   );
