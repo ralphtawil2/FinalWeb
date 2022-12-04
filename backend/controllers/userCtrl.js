@@ -19,7 +19,7 @@ let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9
 const userCtrl = {
     register: async (req, res) =>{
         try {
-            const {name, username, email, password, role} = req.body;
+            const {name, username, email, password, isAdmin} = req.body;
 
             if(!validateEmail(email)) {
                 return res.status(400).json({Error: "Invalid email address."})
@@ -43,7 +43,7 @@ const userCtrl = {
             // Password Encryption
             const passwordHash = await bcrypt.hash(password, 10)
             const newUser = new Users({
-                name, username, email, password: passwordHash, role
+                name, username, email, password: passwordHash, isAdmin
             })
 
             // Save to MongoDB
