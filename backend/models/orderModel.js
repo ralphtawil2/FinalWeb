@@ -23,6 +23,7 @@ const OrderSchema = new mongoose.Schema(
     },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a7216c4 (Created getAllUsers function)
     address: {
@@ -38,12 +39,15 @@ const OrderSchema = new mongoose.Schema(
 >>>>>>> d7bad6e (Made minor changes.)
 =======
 >>>>>>> a7216c4 (Created getAllUsers function)
+=======
+>>>>>>> f197a1e (Made minor changes.)
   },
   {
     timestamps: true,
   }
 );
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 module.exports = mongoose.model("orders", OrderSchema);
@@ -53,3 +57,6 @@ module.exports =mongoose.model("orders", OrderSchema)
 =======
 module.exports = mongoose.model("orders", OrderSchema);
 >>>>>>> a7216c4 (Created getAllUsers function)
+=======
+module.exports =mongoose.model("orders", OrderSchema)
+>>>>>>> f197a1e (Made minor changes.)
