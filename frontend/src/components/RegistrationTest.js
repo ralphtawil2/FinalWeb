@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-// import Axios from "axios";
+import Axios from "axios";
 /*
 Axios is a library it easier to send async HTTP requests and 
 helps us perform CRUD operations (Create , Read, Update, Delete)
@@ -62,7 +62,24 @@ function RegistrationTest() {
     return mailformat.test(String(EMAIL).toLowerCase());
   }
 
-  const validateSignup = () => {
+  const handleSignup = async (evt) => {
+    const nameValue = NAME.value.trim();
+    const usernameValue = USERNAME.value.trim();
+    const emailValue = EMAIL.value.trim();
+    const passwordValue = PASSWORD.value.trim();
+
+    evt.preventDefault();
+    await Axios.post("http://localhost:3001/user/register", {
+      name: nameValue,
+      username: usernameValue,
+      email: emailValue,
+      password: passwordValue,
+    });
+    console.log(nameValue, usernameValue, emailValue);
+  };
+  
+
+  const validateSignup = (evt) => {
     const nameValue = NAME.value.trim();
     const usernameValue = USERNAME.value.trim();
     const emailValue = EMAIL.value.trim();
@@ -93,12 +110,37 @@ function RegistrationTest() {
     } else {
       setSuccess(PASSWORD);
     }
+
+    handleSignup(evt)
   };
 
-  const validateLogin = () => {
+  const handleLogin = async (evt) => {
     const loginEmailValue=LOGINEMAIL.value.trim();
     const loginPasswordValue = LOGINPASSWORD.value.trim();
-  
+
+    evt.preventDefault();
+    try {
+      await Axios.post("http://localhost:3001/user/login", {
+        email: loginEmailValue,
+        password: loginPasswordValue,
+      });
+
+      localStorage.setItem('firstLogin', true)
+
+      window.location.href = "/"
+
+      console.log(loginEmailValue);
+    }
+    catch (err) {
+      alert(err.response.data.msg)
+    }
+    
+  };
+
+  const validateLogin = (evt) => {
+    const loginEmailValue=LOGINEMAIL.value.trim();
+    const loginPasswordValue = LOGINPASSWORD.value.trim();
+    
     if (loginEmailValue === "") {
       setError(LOGINEMAIL, "Email is required");
     } else {
@@ -110,7 +152,13 @@ function RegistrationTest() {
     } else {
       setSuccess(LOGINPASSWORD);
     }
+
+    handleLogin(evt)
   };
+
+  
+
+
   return (
     <MDBContainer className="p-3 my-5 d-flex flex-column w-100">
       <MDBTabs
@@ -121,7 +169,7 @@ function RegistrationTest() {
         <MDBTabsItem>
           <MDBTabsLink
             onClick={() => handleJustifyClick("tab1")}
-            active={justifyActive === "tab1"}
+            active={(justifyActive === "tab1").toString()}
           >
             Login
           </MDBTabsLink>
@@ -129,7 +177,7 @@ function RegistrationTest() {
         <MDBTabsItem>
           <MDBTabsLink
             onClick={() => handleJustifyClick("tab2")}
-            active={(justifyActive === "tab2")}
+            active={(justifyActive === "tab2").toString()}
           >
             Sign up
           </MDBTabsLink>
@@ -216,7 +264,7 @@ function RegistrationTest() {
             Not a member?{" "}
             <a
               onClick={() => handleJustifyClick("tab2")}
-              active={justifyActive === "tab2"}
+              active={(justifyActive === "tab2").toString()}
             >
               Sign up
             </a>
