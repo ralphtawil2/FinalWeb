@@ -147,14 +147,29 @@ const userCtrl = {
         catch (err) {
             return res.status(500).json({msg: err.message})
         }
+    },
+
+    getAllUsers: async (req, res) =>{
+        
+        try {
+            const users = await Users.find().select('-password')
+            if(!users) return res.status(400).json({Error: "Couldn't find any users."})
+
+            res.json(users)
+            
+            //res.json(req.user) // client_id
+        }
+        catch (err) {
+            return res.status(500).json({msg: err.message})
+        }
     }
 }
 
 const createAccessToken = (user) =>{
-    return jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {expiresIn: '5h'})
+    return jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {expiresIn: '1d'})
 }
 const createRefreshToken = (user) =>{
-    return jwt.sign(user, process.env.REFRESH_TOKEN_SECRET, {expiresIn: '2d'})
+    return jwt.sign(user, process.env.REFRESH_TOKEN_SECRET, {expiresIn: '7d'})
 }
 
 module.exports = userCtrl
