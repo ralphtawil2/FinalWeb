@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import Nav from "react-bootstrap/Nav";
-import RegistrationForm from "./Registration";
+// import RegistrationForm from "./Registration";
 import RegistrationTest from "./RegistrationTest";
 
 function PopUpRegisterButton() {
