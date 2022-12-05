@@ -17,12 +17,12 @@ export default function DynamicMultiActionAreaCard() { // param: {product}
         <CardMedia
           component="img"
           height="140"
-          image = "https://res.cloudinary.com/dudg52fav/image/upload/v1670108862/royal-tees_images/colorful-knee-socks-15627587_y22t0c.jpg" //{product.images.url}
-          alt = "Girl waring socks with stars" //{product.description}
+          image = "https://res.cloudinary.com/dudg52fav/image/upload/v1670108554/royal-tees_images/goods_08_427916_pl6nff.jpg" //{product.images.url}
+          alt = "Asian man wearing a black T-Shirt" //{product.description}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Star Socks - 32$      {/*{product.title} - {product.price}$*/}
+            $Black T-Shirt - 32$  {/*{product.title} - {product.price}*/}
           </Typography>
 
           {/*<Typography variant="body2" color="text.secondary">

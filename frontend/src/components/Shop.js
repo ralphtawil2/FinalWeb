@@ -1,7 +1,7 @@
 import * as React from "react";
 // import CenteredTabs from "./CenteredTabs";
 import DynamicMultiActionAreaCard from "./dynamicCard";
-//import Axios from "axios";
+// import Axios from "axios";
 
 
 function Shop() {
@@ -21,8 +21,8 @@ function Shop() {
     
   // };
 
-  //for (let index = 0; index < getProducts.length; index++) {
-  //const product = getProducts[index]
+  // for (let index = 0; index < getProducts.length; index++) {
+  // const product = getProducts[index]
     return (
       <>
         <div className="shop-div">
@@ -31,6 +31,6 @@ function Shop() {
         </div>
       </>
     );    
-}
+  }
 //}
 export default Shop;
