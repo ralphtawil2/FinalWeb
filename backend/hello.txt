@@ -25,3 +25,14 @@ Postman invite link: https://app.getpostman.com/join-team?invite_code=f8b86cac46
 //     console.log(err);
 //   }
 // });
+
+
+
+
+
+dynamic card:
+
+image = {product.images.url} 
+description = {product.description}
+title = {product.title}
+price = {product.price}

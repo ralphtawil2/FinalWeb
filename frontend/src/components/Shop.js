@@ -1,18 +1,36 @@
 import * as React from "react";
-import CenteredTabs from "./CenteredTabs";
-// import Axios from "axios";
+// import CenteredTabs from "./CenteredTabs";
+import DynamicMultiActionAreaCard from "./dynamicCard";
+//import Axios from "axios";
 
 
 function Shop() {
 
-  //const products = Axios.get(productCtrl.getProducts)
-  return (
-    <>
-      <div className="shop-div">
-        <CenteredTabs></CenteredTabs>
+  // const getProducts = async (evt) => {
+  //   evt.preventDefault();
+  //   try {
+  //     await Axios.get("http://localhost:3001/api/products", {
         
-      </div>
-    </>
-  );
+  //     });
+
+  //     console.log("Hi");
+  //   }
+  //   catch (err) {
+  //     alert(err.response.data.msg)
+  //   }
+    
+  // };
+
+  //for (let index = 0; index < getProducts.length; index++) {
+  //const product = getProducts[index]
+    return (
+      <>
+        <div className="shop-div">
+          <DynamicMultiActionAreaCard>
+          </DynamicMultiActionAreaCard>
+        </div>
+      </>
+    );    
 }
+//}
 export default Shop;
