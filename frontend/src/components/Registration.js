@@ -29,6 +29,7 @@ function RegistrationForm() {
 
     setJustifyActive(value);
   };
+  
   const [name, setName] = useState("");
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -56,6 +57,8 @@ function RegistrationForm() {
     });
     console.log(name, username, email, password);
   };
+
+
 
 
 
