@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useState } from "react";
 import PopUpRegisterButton from "./BackdropModal";
+import DarkMode from "./DarkMode"
 
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -19,7 +20,7 @@ function NavigationBar() {
   return (
     <Navbar expand="lg" className={navbar ? "bg-full" : "bg-light"}>
       <Container>
-      
+      <DarkMode></DarkMode>
       <Navbar.Brand href="/">RoyalTees</Navbar.Brand>
       
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

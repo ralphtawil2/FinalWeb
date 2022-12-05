@@ -1,43 +1,44 @@
-import React from "react";
+import React from "react"
 
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import "bootstrap-css-only/css/bootstrap.min.css";
-import "mdbreact/dist/css/mdb.css";
-/*import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fas } from '@fortawesome/free-solid-svg-icons'
-import { far } from '@fortawesome/free-regular-svg-icons'
-import { fab } from '@fortawesome/free-brands-svg-icons'*/
 
 const DarkMode = () => {
-  const [darkMode, setDarkMode] = React.useState(false);
+  let clickedClass = "clicked"
+  const body = document.body
+  const lightTheme = "light"
+  const darkTheme = "dark"
+  let theme
 
-  React.useEffect(() => {
-    const json = localStorage.getItem("site-dark-mode");
-    const currentMode = JSON.parse(json);
-    if (currentMode) {
-      setDarkMode(true);
-    } else {
-      setDarkMode(false);
-    }
-  }, []);
+  if (localStorage) {
+    theme = localStorage.getItem("theme")
+  }
 
-  React.useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add("dark");
+  if (theme === lightTheme || theme === darkTheme) {
+    body.classList.add(theme)
+  } else {
+    body.classList.add(lightTheme)
+  }
+
+  const switchTheme = e => {
+    if (theme === darkTheme) {
+      body.classList.replace(darkTheme, lightTheme)
+      e.target.classList.remove(clickedClass)
+      localStorage.setItem("theme", "light")
+      theme = lightTheme
     } else {
-      document.body.classList.remove("dark");
+      body.classList.replace(lightTheme, darkTheme)
+      e.target.classList.add(clickedClass)
+      localStorage.setItem("theme", "dark")
+      theme = darkTheme
     }
-    const json = JSON.stringify(darkMode);
-    localStorage.setItem("site-dark-mode", json);
-  }, [darkMode]);
+  }
 
   return (
-    <div className={"MoonIconBG"}>
-      <i onClick={() => setDarkMode(!darkMode)} className="fas fa-moon"></i>
-    </div>
-  );
-};
+    <button
+      className={theme === "dark" ? clickedClass : ""}
+      id="darkMode"
+      onClick={e => switchTheme(e)}
+    ></button>
+  )
+}
 
-export default DarkMode;
+export default DarkMode
