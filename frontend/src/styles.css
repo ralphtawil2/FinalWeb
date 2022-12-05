@@ -547,3 +547,42 @@ a.navbar-brand{
    
 }
 
+.text-center {
+    text-align: center!important;
+    color: white;
+}
+
+.input-control{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input{
+    border: 2px solid white;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+   
+}
+
+
+.input-control input:focus{
+    outline: 0;
+}
+
+.input-control.success input{
+    border-color: #5cb85c;
+}
+
+
+.input-control.error input{
+    border-color: #d9534f;
+}
+
+.input-control .error{
+    color: #d9534f;
+}
+
+label{
+    color: white !important;;
+}

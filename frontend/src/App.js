@@ -36,10 +36,6 @@ function App() {
             <Cart/>
           </Route>
 
-          <Route exact path="/contact">
-            
-          </Route>
-
           <Route exact path="/customize">
             <CustomizeSteps/>
           </Route>

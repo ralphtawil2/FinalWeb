@@ -29,7 +29,7 @@ function NavigationBar() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/shop">Shop</Nav.Link>
             
-            <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link href="mailto: anthonyelhayek@gmail.com">Contact</Nav.Link>
             <PopUpRegisterButton />
             <Nav.Link href="/cart">Cart</Nav.Link>
           </Nav>

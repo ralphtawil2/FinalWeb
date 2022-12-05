@@ -15,50 +15,102 @@ import {
   MDBTabsPane,
   MDBBtn,
   MDBIcon,
-  MDBInput,
+  //MDBInput,
   MDBCheckbox,
 } from "mdb-react-ui-kit";
 
-function RegistrationForm() {
+export default RegistrationTest;
+
+function RegistrationTest() {
   const [justifyActive, setJustifyActive] = useState("tab1");
 
   const handleJustifyClick = (value) => {
+    
     if (value === justifyActive) {
       return;
     }
 
     setJustifyActive(value);
   };
-  const [name, setName] = useState("");
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    // if (name == null) {
-    //   console.log("Please enter your name");
-    // }
-    // if (username == null) {
-    //   console.log("Please enter your username");
-    // }
-    // if (email == null) {
-    //   console.log("Please enter your email");
-    // }
-    // if (password == null) {
-    //   console.log("Please enter your password");
-    // }
-    Axios.post("http://localhost:3001", {
-      name: name,
-      username: username,
-      email: email,
-      password: password,
-    });
-    console.log(name, username, email, password);
+  //const FORM = document.getElementById("form");
+  const NAME = document.getElementById("name");
+  const USERNAME = document.getElementById("username");
+  const EMAIL = document.getElementById("email");
+  const PASSWORD = document.getElementById("password");
+  const LOGINEMAIL = document.getElementById("loginemail");
+  const LOGINPASSWORD = document.getElementById("loginpassword");
+
+  const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector(".error");
+    errorDisplay.innerText = message;
+    inputControl.classList.add("error");
+    inputControl.classList.remove("success");
   };
 
+  const setSuccess = (element) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector(".error");
+    errorDisplay.innerText = "";
+    inputControl.classList.add("success");
+    inputControl.classList.remove("error");
+  };
 
+  const validateEmail=EMAIL =>{
+    const mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    return mailformat.test(String(EMAIL).toLowerCase());
+  }
 
+  const validateSignup = () => {
+    const nameValue = NAME.value.trim();
+    const usernameValue = USERNAME.value.trim();
+    const emailValue = EMAIL.value.trim();
+    const passwordValue = PASSWORD.value.trim();
+
+    if (nameValue === "") {
+      setError(NAME, "Name is required");
+    } else {
+      setSuccess(NAME);
+    }
+
+    if (usernameValue === "") {
+      setError(USERNAME, "Username is required");
+    } else {
+      setSuccess(USERNAME);
+    }
+
+    if (emailValue === "") {
+      setError(EMAIL, "Email is required");
+    } else if (!validateEmail(emailValue)) {
+      setError(EMAIL, "Invalid email");
+    } else {
+      setSuccess(EMAIL);
+    }
+
+    if (passwordValue === "") {
+      setError(PASSWORD, "Password is required");
+    } else {
+      setSuccess(PASSWORD);
+    }
+  };
+
+  const validateLogin = () => {
+    const loginEmailValue =LOGINEMAIL.value.trim();
+    const loginPasswordValue = LOGINPASSWORD.value.trim();
+  
+    if (loginEmailValue === "") {
+      setError(LOGINEMAIL, "Email is required");
+    } else {
+      setSuccess(LOGINEMAIL);
+    }
+
+    if (loginPasswordValue === "") {
+      setError(LOGINPASSWORD, "Password is required");
+    } else {
+      setSuccess(LOGINPASSWORD);
+    }
+  };
   return (
     <MDBContainer className="p-3 my-5 d-flex flex-column w-100">
       <MDBTabs
@@ -77,7 +129,7 @@ function RegistrationForm() {
         <MDBTabsItem>
           <MDBTabsLink
             onClick={() => handleJustifyClick("tab2")}
-            active={justifyActive === "tab2"}
+            active={(justifyActive === "tab2")}
           >
             Sign up
           </MDBTabsLink>
@@ -133,18 +185,19 @@ function RegistrationForm() {
             <p className="text-center mt-3">or:</p>
           </div>
 
-          <MDBInput
-            wrapperClass="mb-4"
-            label="Email address"
-            id="form1"
-            type="email"
-          />
-          <MDBInput
-            wrapperClass="mb-4"
-            label="Password"
-            id="form2"
-            type="password"
-          />
+          <form action="/">
+            <div className="input-control">
+              <label >Email</label>
+              <input id="loginemail" type="email" name="email" ></input>
+              <div className="error"></div>
+            </div>
+
+            <div className="input-control">
+              <label >Password</label>
+              <input id="loginpassword" type="password" name="password"></input>
+              <div className="error"></div>
+            </div>
+          </form>
 
           <div className="d-flex justify-content-between mx-4 mb-4">
             <MDBCheckbox
@@ -156,9 +209,17 @@ function RegistrationForm() {
             <a href="!#">Forgot password?</a>
           </div>
 
-          <MDBBtn className="mb-4 w-100">Log in</MDBBtn>
+          <MDBBtn className="mb-4 w-100" onClick={validateLogin}>
+            Log in
+          </MDBBtn>
           <p className="text-center">
-            Not a member? <a onClick={() => handleJustifyClick("tab2")} active={justifyActive === "tab2"}>Sign up</a>
+            Not a member?{" "}
+            <a
+              onClick={() => handleJustifyClick("tab2")}
+              active={justifyActive === "tab2"}
+            >
+              Sign up
+            </a>
           </p>
         </MDBTabsPane>
 
@@ -209,41 +270,32 @@ function RegistrationForm() {
 
             <p className="text-center mt-3">or:</p>
           </div>
+          <form >
+            <div className="input-control">
+              <label >Name</label>
+              <input id="name" type="text" name="name"></input>
+              <div className="error"></div>
+            </div>
 
-          <MDBInput
-            wrapperClass="mb-4"
-            label="Name"
-            id="form1"
-            type="text"
-            onChange={(e) => setName(e.target.value)}
-            value={name}
-          />
-          <MDBInput
-            wrapperClass="mb-4"
-            label="Username"
-            id="form1"
-            type="text"
-            onChange={(e) => setUsername(e.target.value)}
-            value={username}
-          />
-          <MDBInput
-            wrapperClass="mb-4"
-            label="Email"
-            id="form1"
-            type="email"
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-          />
-          
-          <MDBInput
-            wrapperClass="mb-4"
-            id="form1"
-            type="password"
-            onChange={(e) => setPassword(e.target.value)}
-            value={password}
-            label="Password"
-          />
-        
+            <div className="input-control">
+              <label>Username</label>
+              <input id="username" type="text" name="username"></input>
+              <div className="error"></div>
+            </div>
+
+            <div className="input-control">
+              <label>Email</label>
+              <input id="email" type="email" name="email"></input>
+              <div className="error"></div>
+            </div>
+
+            <div className="input-control">
+              <label>Password</label>
+              <input id="password" type="password" name="password"></input>
+              <div className="error"></div>
+            </div>
+          </form>
+
           <div className="d-flex justify-content-center mb-4">
             <MDBCheckbox
               name="flexCheck"
@@ -252,7 +304,7 @@ function RegistrationForm() {
             />
           </div>
 
-          <MDBBtn className="mb-4 w-100" onClick={handleSubmit}>
+          <MDBBtn className="mb-4 w-100" onClick={validateSignup}>
             Sign up
           </MDBBtn>
         </MDBTabsPane>
@@ -260,5 +312,3 @@ function RegistrationForm() {
     </MDBContainer>
   );
 }
-
-export default RegistrationForm;
