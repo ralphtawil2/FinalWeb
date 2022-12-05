@@ -13,16 +13,18 @@ const ProductSchema = new mongoose.Schema(
       trim: true,
       required: true,
     },
+    colors: {
+      type: Array
+    },
+    sizes: {
+      type: Array
+    },
     price: {
       type: Number,
       trim: true,
       required: true,
     },
     description: {
-      type: String,
-      required: true,
-    },
-    content: {
       type: String,
       required: true,
     },
@@ -41,6 +43,10 @@ const ProductSchema = new mongoose.Schema(
     sold: {
       type: Number,
       default: 0,
+    },
+    inStock: {
+      type: Boolean,
+      default: true
     },
   },
   {
