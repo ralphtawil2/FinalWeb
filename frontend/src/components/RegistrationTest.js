@@ -22,7 +22,7 @@ import {
 export default RegistrationTest;
 
 function RegistrationTest() {
-  const [justifyActive, setJustifyActive] = useState("tab1");
+  const [justifyActive, setJustifyActive] = useState("tab0");
 
   const handleJustifyClick = (value) => {
     
@@ -96,7 +96,7 @@ function RegistrationTest() {
   };
 
   const validateLogin = () => {
-    const loginEmailValue =LOGINEMAIL.value.trim();
+    const loginEmailValue=LOGINEMAIL.value.trim();
     const loginPasswordValue = LOGINPASSWORD.value.trim();
   
     if (loginEmailValue === "") {

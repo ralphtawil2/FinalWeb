@@ -496,11 +496,11 @@ a.nav-link.active{
 }
 
 i.fab{
-    color: white !important;
+    color: rgb(255, 255, 255) !important;
 }
 
 a{
-    color :white !important;
+    color :rgb(116, 211, 255) !important;
 }
 
 a.navbar-brand{
@@ -585,4 +585,10 @@ a.navbar-brand{
 
 label{
     color: white !important;;
+}
+
+.nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link {
+    width: 95%;
+    display: inline-block;
+    
 }
