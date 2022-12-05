@@ -41,6 +41,24 @@ class APIfeatures {
 }
 
 const productCtrl = {
+/*    getProduct: async (req, res) =>{
+        try {
+            const features = new APIfeatures(Products.findById(), req.query)
+            .filtering().sorting().paginating()
+
+            const product = await features.query
+
+            res.json({
+                status: 'success',
+                products: product
+            })
+            
+        } catch (err) {
+            return res.status(500).json({msg: err.message})
+        }
+    },
+*/
+
     getProducts: async(req, res) =>{
         try {
             const features = new APIfeatures(Products.find(), req.query)
@@ -61,7 +79,7 @@ const productCtrl = {
 
     createProduct: async(req, res) =>{
         try {
-            const {product_id, title, price, description, content, images, category} = req.body;
+            const {product_id, title, price, description, images, category} = req.body;
             if(!images) {
                 return res.status(400).json({Error: "You must upload an image."})
             }
@@ -72,7 +90,7 @@ const productCtrl = {
             }
 
             const newProduct = new Products({
-                product_id, title: title.toLowerCase(), price, description, content, images, category
+                product_id, title: title.toLowerCase(), price, description, images, category
             })
 
             await newProduct.save()
@@ -96,13 +114,13 @@ const productCtrl = {
 
     updateProduct: async(req, res) =>{
         try {
-            const {title, price, description, content, images, category} = req.body;
+            const {title, price, description, images, category} = req.body;
             if(!images) {
                 return res.status(400).json({Error: "You must upload an image."})
             }
 
             await Products.findOneAndUpdate({_id: req.params.id}, {
-                title: title.toLowerCase(), price, description, content, images, category
+                title: title.toLowerCase(), price, description, images, category
             })
 
             res.json({msg: "Updated a Product"})
