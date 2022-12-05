@@ -21,10 +21,18 @@ const OrderSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
+    address: {
+      type: Object,
+      equired: true,
+    },
+    status: {
+      type: String,
+      default: "pending",
+    },
   },
   {
     timestamps: true,
   }
 );
 
-module.exports =mongoose.model("orders", OrderSchema)
+module.exports = mongoose.model("orders", OrderSchema);
